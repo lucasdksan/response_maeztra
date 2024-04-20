@@ -1,0 +1,9 @@
+Um elemento crucial é o uso do bloco condition-layout.product, que valida a disponibilidade do produto para venda e, com base nessa condição, determina qual bloco deve ser renderizado.
+
+Dentro do arquivo product.jsonc, diversos blocos se repetem, dependendo se o produto está habilitado para venda ou não. Estes incluem flex-layout.row#product-name, flex-layout.row#rating-summary, product-identifier.product, flex-layout.row#list-price-savings, flex-layout.row#selling-price, product-installments, product-separator e sku-selector. Portanto, é importante mantê-los fixos e na ordem especificada no ponto 2 dos critérios.
+
+Com o condition-layout.product modelado, os blocos flex-layout.row#pdp-main-info-not-available (no Then) e flex-layout.col#pdp-main-info-buy (no Else) foram incluídos em suas propriedades. O bloco flex-layout.row#pdp-main-info-not-available é responsável por renderizar os textos "Avisar-me" e "Para ser avisado da disponibilidade deste Produto, basta preencher os campos abaixo.", além dos campos de nome e e-mail contidos no bloco availability-notify#pdp-main-info-not-available-subscribe.
+
+O bloco flex-layout.col#pdp-main-info-buy, por sua vez, renderiza os blocos product-quantity, product-assembly-options, product-gifts, flex-layout.row#buy-button, availability-subscriber, shipping-simulator, share#default e product-reward-value. Estes são os blocos que só podem ser renderizados caso o produto esteja disponível.
+
+Além disso, coloquei o product-rating-summary dentro de um flex-layout para facilicar na identificação, estilização e remoção desse bloco.

@@ -1,0 +1,2 @@
+No manifest.json coloquei as dependencias "vtex.store-components", "vtex.slider-layout", "vtex.flex-layout" e "vtex.rich-text" para conseguir gerar o componente solicitado.
+O "vtex.store-components" instalei para poder ter acesso ao info-card, "vtex.flex-layout" para os flex-layouts funcionarem perfeitamente, "vtex.rich-text" para poder criar o título do componente e o "vtex.slider-layout" para criar o slider de info cards solicitado.

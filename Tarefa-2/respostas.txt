@@ -1,0 +1,25 @@
+1. Primeiro fazer o vtex install vtexventures.livestreaming-free@0.x e adicionaria ele nas peerDependencies. Ficando dessa forma:
+
+"peerDependencies": {
+    "vtex.reviews-and-ratings": "3.x",
+    "vtexventures.livestreaming-free": "0.x"
+},
+
+Em seguida adicionaria no local determinado pelo cliente. No caso na homepage:
+
+{
+    "store.home": {
+        "title": "Add livestreaming",
+        "blocks": [
+            "livestreaming"
+        ]
+    }
+}
+
+Para fazer o deploy colocaria no terminal o seguinte comando:
+
+"vtex publish && vtex use livestreamingproduction --production && vtex install maeztra.store-theme@6.1.1"
+
+E em seguida ia fazer a mudanção de manjor via graphql, pois o app em questão é uma peerDependencies.
+
+Depois da mudanção de major faria o seguinte comando no terminal "vtex deploy && vtex workspace promote"

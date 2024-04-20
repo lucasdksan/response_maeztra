@@ -1,0 +1,136 @@
+{
+    "flex-layout.row#home-info-slider": {
+        "title": "MZ | Info Slider",
+        "props": {
+            "fullWidth": false,
+            "paddingTop": {
+                "desktop": 5,
+                "tablet": 5,
+                "phone": 0
+            },
+            "paddingBottom": {
+                "desktop": 6,
+                "tablet": 6,
+                "phone": 0
+            },
+            "marginTop": {
+                "desktop": 0,
+                "tablet": 0,
+                "phone": 0
+            },
+            "marginBottom": {
+                "desktop": 0,
+                "tablet": 0,
+                "phone": 0
+            },
+            "colGap": {
+                "desktop": 0,
+                "tablet": 0,
+                "phone": 0
+            },
+            "borderWidth": 0,
+            "colSizing": "auto",
+            "preventHorizontalStretch": false,
+            "horizontalAlign": "left",
+            "preserveLayoutOnMobile": false
+        },
+        "children": [
+            "flex-layout.col#home-info-container-col"
+        ]
+    },
+    "flex-layout.col#home-info-container-col":{
+        "tilte": "Container em Coluna",
+        "children": [
+            "rich-text#home-info-title",
+            "slider-layout#home-info-slider"
+        ]
+    },
+    "rich-text#home-info-title":{
+        "title": "Título do Componente",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Componente teste",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-5",
+            "blockClass": "help-message"
+        }
+    },
+    "slider-layout#home-info-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true
+        },
+        "children": [
+            "info-card#info-details-1",
+            "info-card#info-details-2",
+            "info-card#info-details-3",
+            "info-card#info-details-4",
+            "info-card#info-details-5"
+        ]
+    },
+    "info-card#info-details-1": {
+        "props": {
+            "id": "info-details-1",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard1.png",
+            "headline": "Nome Categoria",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#info-details-2": {
+        "props": {
+            "id": "info-details-2",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard2.png",
+            "headline": "Nome Categoria",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#info-details-3": {
+        "props": {
+            "id": "info-details-3",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard3.png",
+            "headline": "Nome Categoria",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#info-details-4": {
+        "props": {
+            "id": "info-details-4",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard4.png",
+            "headline": "Nome Categoria",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#info-details-5": {
+        "props": {
+            "id": "info-details-5",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard5.png",
+            "headline": "Nome Categoria",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "textAlignment": "center"
+        }
+    }
+}

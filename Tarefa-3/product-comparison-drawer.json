@@ -1,0 +1,56 @@
+{
+    "product-comparison-drawer": {
+        "title": "Comparação de Produtos",
+        "blocks": [
+            "list-context.comparison-product-summary-slider#drawer"
+        ]
+    },
+    "list-context.comparison-product-summary-slider#drawer": {
+        "blocks": [
+            "product-summary.shelf.product-comparison#drawer"
+        ],
+        "children": [
+            "slider-layout#comparison-drawer"
+        ]
+    },
+    "slider-layout#comparison-drawer": {
+        "props": {
+            "blockClass": "comparison-drawer",
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "showPaginationDots": "never",
+            "infinite": true,
+            "fullWidth": true
+        }
+    },
+    "product-summary.shelf.product-comparison#drawer": {
+        "children": [
+            "product-summary-column#drawer-col2",
+            "product-comparison-block.close-button"
+        ],
+        "props": {
+            "blockClass": "drawer-summary"
+        }
+    },
+    "product-summary-column#drawer-col2": {
+        "children": [
+            "product-summary-name",
+            "product-summary-price#comparison"
+        ],
+        "props": {
+            "blockClass": "drawer-summary-col2"
+        }
+    },
+    "product-summary-price#comparison": {
+        "props": {
+            "showListPrice": false,
+            "showSellingPriceRange": false,
+            "showLabels": false,
+            "showInstallments": false,
+            "showDiscountValue": false
+        }
+    }
+}

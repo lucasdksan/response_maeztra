@@ -1,0 +1,1 @@
+2. O problema estava na forma como os blocos "product-summary.shelf.product-comparison#drawer" e "slider-layout#comparison-drawer" foram aplicados. Basicamente eles estavam invertidos e isso estava gerando o erro de interface.

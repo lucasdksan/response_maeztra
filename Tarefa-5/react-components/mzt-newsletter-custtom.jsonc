@@ -1,0 +1,8 @@
+{
+    "mzt-newsletter-custom": {
+        "title": "Maeztra Newsletter Custom",
+        "props": {
+            "VtexNewsletter": "newsletter"
+        }
+    }
+}

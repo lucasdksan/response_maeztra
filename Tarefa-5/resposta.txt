@@ -1,0 +1,9 @@
+Para atender ao desejo do cliente de enviar os e-mails cadastros na newsletter para o parceiro no momento do registro, e considerando a ausência de restrições na utilização de Aplicativos Personalizados, adotei a seguinte abordagem.
+
+Criei um Aplicativo Personalizado denominado "NewsletterCustom" e o nomeei como "mzt-newsletter-custom" no arquivo interfaces.json. Sua funcionalidade é a seguinte:
+
+Recebe como propriedades o componente de newsletter da Vtex, uma vez que o cliente relatou que o componente estava operando conforme suas expectativas. Esse componente é então encapsulado em uma div com a referência "refContent".
+
+A partir desse ponto, realizo a validação para verificar se o componente foi renderizado. Se a renderização for bem-sucedida, identifico o campo de entrada de e-mail e o botão de envio. No botão de envio, adiciono um evento de clique.
+
+Quando esse evento é acionado, valido se o valor inserido no campo de entrada é um endereço de e-mail válido. Se for o caso, envio esse e-mail para o parceiro utilizando o código disponibilizado. Além disso, configurei o identificador solicitado pelo parceiro no schema, permitindo assim que o cliente o insira diretamente no site editor. Isso evita a necessidade de um desenvolvedor modificar o código diretamente, caso o cliente deseje alterá-lo no futuro.
